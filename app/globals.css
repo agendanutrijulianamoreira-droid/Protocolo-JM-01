@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 42 39% 92%;
+  --foreground: 21 40% 12%;
+  --border: 40 30% 82%;
+  --input: 40 30% 82%;
+  --ring: 43 61% 51%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: #f4efe4;
+  color: #2b1a10;
+  font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+/* Deterrent contra cópia casual de conteúdo protegido (não impede print/gravação de tela). */
+.protected-content {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
